@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BrentFM/Eat-Da-Burger.git"
+    "url": "git+https://github.com/BrentFM/burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BrentFM/Eat-Da-Burger/issues"
+    "url": "https://github.com/BrentFM/burger/issues"
   },
-  "homepage": "https://github.com/BrentFM/Eat-Da-Burger#readme",
+  "homepage": "https://github.com/BrentFM/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
