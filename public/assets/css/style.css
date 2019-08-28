@@ -1,0 +1,62 @@
+li {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: #d7fafa;
+    list-style-type: none;
+    font-size: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* background: #faebd7; */
+
+  ul {
+    margin-right: 7.5%;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  .card-header {
+    height: 60px;
+  }
+
+  .delete-burger, .change-devoured {
+      float: right;
+      height: 40px;
+      margin-top: -5px;
+      border-radius: 0%;
+  }
+
+  .addBurger {
+      margin-top: 2.5%;
+  }
+
+  .newBurgerInput {
+  display: inline-block;
+  margin-bottom: 2.5%;
+  }
+
+  .burgerLabel {
+      margin-top: 2.5%;
+    display: flex;
+  }
+
+  .burgerName {
+      width: 300px;
+  }
+
+  .btnAddBurger {
+      width: 20%;
+  }

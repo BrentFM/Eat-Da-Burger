@@ -1,0 +1,59 @@
+<h1>Eat Da Burgers!</h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="card shadow">
+          <div class="card-header">
+            <h2>burgers that are not devoured!</h2>
+          </div>
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card shadow">
+          <div class="card-header">
+            <h2>burgers that are devoured!</h2>
+          </div>
+
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card addBurger shadow">
+          <div class="card-header">
+            <h2>Add a burger</h2>
+          </div>
+          <form class="create-form">
+
+            <div class="form-group newBurgerInput">
+              <label class="burgerLabel" for="ca">Burger Name:</label>
+              <input class="form-control burgerName" placeholder="Ex. Cheese Burger" type="text" id="ca" name="name">
+            </div>
+
+            <div class="form-group">
+              <label for="devoured">Devoured?</label><br>
+              <input type="radio" name="devoured" value="1" checked> Yes<br>
+              <input type="radio" name="devoured" value="0"> No
+            </div>
+            <br>
+            <button class="btn btn-dark btnAddBurger" type="submit">Add burger</button>
+          </form>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
